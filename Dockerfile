@@ -4,7 +4,7 @@ ENV SONAR_VERSION 3.2.0.1227
 
 ADD https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_VERSION}-linux.zip /opt/
 RUN ( \
-        cd /opt && \
+        cd /tmp && \
         unzip sonar-scanner-cli-${SONAR_VERSION}-linux.zip \
     )
 RUN ( \
